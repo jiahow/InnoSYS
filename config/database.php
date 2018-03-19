@@ -77,7 +77,17 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
         ],
-
+        'mongodb' => array(
+            'driver' => 'mongodb',
+            'host' =>'localhost',
+            'port' => 27017,
+            'database' => 'test',
+            'username' => 'admin',
+            'password' => '12345',
+            'options' => array(
+                'db' => 'admin' // sets the authentication database required by mongo 3
+            )
+        ),
     ],
 
     /*
